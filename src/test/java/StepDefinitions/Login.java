@@ -2,6 +2,7 @@ package StepDefinitions;
 
 import java.util.concurrent.TimeUnit;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -11,9 +12,9 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
-public class LoginStepDef {
+public class Login {
 
-	WebDriver driver;
+    WebDriver driver;
 	public static void init() {
 
 	}
@@ -27,9 +28,9 @@ public class LoginStepDef {
 		driver.get("http://www.gmail.com/");
 	}
 
-	@When("^User enters the username$")
-	public void user_enters_username() {
-		driver.findElement(By.id("identifierId")).sendKeys("shivammrastogi");
+	@When("^User enters the \"(.*)\"$")
+	public void user_enters_username(String username) {
+		driver.findElement(By.id("identifierId")).sendKeys(username);
 	}
 
 	@And("^User clicks on Next button$")
@@ -37,19 +38,24 @@ public class LoginStepDef {
 		driver.findElement(By.id("identifierNext")).click();
 	}
 
-	@And("^User enters the password$")
-	public void user_enters_password() {
-		driver.findElement(By.name("password")).sendKeys("rakshik$");
+	@And("^User enters \"(.*)\"$")
+	public void user_enters_password(String password) {
+		driver.findElement(By.name("password")).sendKeys(password);
 	}
 
 	@And("^User hits Next button$")
 	public void user_selects_Next_button() {
-		driver.findElement(By.id("passwordNext")).click();
+		driver.findElement(By.xpath("//span[contains(text(), 'Next')]")).click();
 	}
 
 	@Then("^User gets navigated to Inbox$")
 	public void user_navigates_inbox() {
-		String Inbox = driver.getTitle();
-		System.out.println(Inbox);
+		String Compose = driver.findElement(By.xpath("//div[contains(text(), 'Compose')]")).getText();
+		Assert.assertEquals("Compose", Compose);
+	}
+	
+	@And("^User closes the browser$")
+	public void user_closes_browser() {
+		driver.quit();
 	}
 }

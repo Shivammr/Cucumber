@@ -8,7 +8,10 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
 		features= "C:\\Users\\Shivamm\\eclipse-workspace\\Cucumber\\src\\test\\java\\Features"
 		, glue= "StepDefinitions", 
-		plugin= {"pretty", "html:test-output"}
+		plugin= {"pretty", "html:test-output", "json:json_output/cucumber.json", "junit:junit_xml/cucumber.xml"},
+		dryRun = true,
+		monochrome=true,
+		strict=true	
 )
 
 public class TestRunner {

@@ -1,0 +1,297 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 14,
+        "name": "Log in to Gmail",
+        "description": "",
+        "id": "gmail-login;log-in-to-gmail;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "User is on the login page",
+            "match": {
+              "location": "Login.user_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "User enters the \"shivammrastogi\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "shivammrastogi",
+                  "offset": 17
+                }
+              ],
+              "location": "Login.user_enters_username(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "User clicks on Next button",
+            "match": {
+              "location": "Login.user_hits_Next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "User enters \"rakshik$\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "rakshik$",
+                  "offset": 13
+                }
+              ],
+              "location": "Login.user_enters_password(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "User hits Next button",
+            "match": {
+              "location": "Login.user_selects_Next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "User gets navigated to Inbox",
+            "match": {
+              "location": "Login.user_navigates_inbox()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "User closes the browser",
+            "match": {
+              "location": "Login.user_closes_browser()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 15,
+        "name": "Log in to Gmail",
+        "description": "",
+        "id": "gmail-login;log-in-to-gmail;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "User is on the login page",
+            "match": {
+              "location": "Login.user_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "User enters the \"shivammrastogi05\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "shivammrastogi05",
+                  "offset": 17
+                }
+              ],
+              "location": "Login.user_enters_username(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "User clicks on Next button",
+            "match": {
+              "location": "Login.user_hits_Next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "User enters \"rakshik$$\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "rakshik$$",
+                  "offset": 13
+                }
+              ],
+              "location": "Login.user_enters_password(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "User hits Next button",
+            "match": {
+              "location": "Login.user_selects_Next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "User gets navigated to Inbox",
+            "match": {
+              "location": "Login.user_navigates_inbox()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "User closes the browser",
+            "match": {
+              "location": "Login.user_closes_browser()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Gmail Login",
+    "description": "",
+    "id": "gmail-login",
+    "keyword": "Feature",
+    "uri": "1_Login.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Compose a new email",
+        "description": "",
+        "id": "compose-mail;compose-a-new-email",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "User is logged in",
+            "match": {
+              "location": "Compose.user_has_logged_in()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "User clicks on the Compose button",
+            "match": {
+              "location": "Compose.user_hits_compose()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "User enters the recipient",
+            "match": {
+              "location": "Compose.user_enters_recipient()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "User enters the subject",
+            "match": {
+              "location": "Compose.user_enters_subject()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "User enters the mail body",
+            "match": {
+              "location": "Compose.user_enters_message()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Compose mail",
+    "description": "",
+    "id": "compose-mail",
+    "keyword": "Feature",
+    "uri": "2_Compose.feature"
+  }
+]

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="0">
+    <testcase classname="Gmail Login" name="Log in to Gmail" time="0">
+        <system-out>
+            <![CDATA[Given User is on the login page.............................................skipped
+When User enters the "shivammrastogi".......................................skipped
+And User clicks on Next button..............................................skipped
+And User enters "rakshik$"..................................................skipped
+And User hits Next button...................................................skipped
+Then User gets navigated to Inbox...........................................skipped
+And User closes the browser.................................................skipped
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Gmail Login" name="Log in to Gmail 2" time="0">
+        <system-out>
+            <![CDATA[Given User is on the login page.............................................skipped
+When User enters the "shivammrastogi05".....................................skipped
+And User clicks on Next button..............................................skipped
+And User enters "rakshik$$".................................................skipped
+And User hits Next button...................................................skipped
+Then User gets navigated to Inbox...........................................skipped
+And User closes the browser.................................................skipped
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Compose mail" name="Compose a new email" time="0">
+        <system-out>
+            <![CDATA[Given User is logged in.....................................................skipped
+When User clicks on the Compose button......................................skipped
+Then User enters the recipient..............................................skipped
+Then User enters the subject................................................skipped
+Then User enters the mail body..............................................skipped
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
