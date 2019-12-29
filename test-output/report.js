@@ -1,294 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("1_Login.feature");
-formatter.feature({
-  "line": 1,
-  "name": "Gmail Login",
-  "description": "",
-  "id": "gmail-login",
-  "keyword": "Feature"
-});
-formatter.scenarioOutline({
-  "line": 3,
-  "name": "Log in to Gmail",
-  "description": "",
-  "id": "gmail-login;log-in-to-gmail",
-  "type": "scenario_outline",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 4,
-  "name": "User is on the login page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 5,
-  "name": "User enters the \"\u003cusername\u003e\"",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 6,
-  "name": "User clicks on Next button",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 7,
-  "name": "User enters \"\u003cpassword\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 8,
-  "name": "User hits Next button",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 9,
-  "name": "User gets navigated to Inbox",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 10,
-  "name": "User closes the browser",
-  "keyword": "And "
-});
-formatter.examples({
-  "line": 12,
-  "name": "",
-  "description": "",
-  "id": "gmail-login;log-in-to-gmail;",
-  "rows": [
-    {
-      "cells": [
-        "username",
-        "password"
-      ],
-      "line": 13,
-      "id": "gmail-login;log-in-to-gmail;;1"
-    },
-    {
-      "cells": [
-        "shivammrastogi",
-        "rakshik$"
-      ],
-      "line": 14,
-      "id": "gmail-login;log-in-to-gmail;;2"
-    },
-    {
-      "cells": [
-        "shivammrastogi05",
-        "rakshik$$"
-      ],
-      "line": 15,
-      "id": "gmail-login;log-in-to-gmail;;3"
-    }
-  ],
-  "keyword": "Examples"
-});
-formatter.scenario({
-  "line": 14,
-  "name": "Log in to Gmail",
-  "description": "",
-  "id": "gmail-login;log-in-to-gmail;;2",
-  "type": "scenario",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 4,
-  "name": "User is on the login page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 5,
-  "name": "User enters the \"shivammrastogi\"",
-  "matchedColumns": [
-    0
-  ],
-  "keyword": "When "
-});
-formatter.step({
-  "line": 6,
-  "name": "User clicks on Next button",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 7,
-  "name": "User enters \"rakshik$\"",
-  "matchedColumns": [
-    1
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 8,
-  "name": "User hits Next button",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 9,
-  "name": "User gets navigated to Inbox",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 10,
-  "name": "User closes the browser",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "Login.user_on_login_page()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "shivammrastogi",
-      "offset": 17
-    }
-  ],
-  "location": "Login.user_enters_username(String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Login.user_hits_Next_button()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "rakshik$",
-      "offset": 13
-    }
-  ],
-  "location": "Login.user_enters_password(String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Login.user_selects_Next_button()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Login.user_navigates_inbox()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Login.user_closes_browser()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.scenario({
-  "line": 15,
-  "name": "Log in to Gmail",
-  "description": "",
-  "id": "gmail-login;log-in-to-gmail;;3",
-  "type": "scenario",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 4,
-  "name": "User is on the login page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 5,
-  "name": "User enters the \"shivammrastogi05\"",
-  "matchedColumns": [
-    0
-  ],
-  "keyword": "When "
-});
-formatter.step({
-  "line": 6,
-  "name": "User clicks on Next button",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 7,
-  "name": "User enters \"rakshik$$\"",
-  "matchedColumns": [
-    1
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 8,
-  "name": "User hits Next button",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 9,
-  "name": "User gets navigated to Inbox",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 10,
-  "name": "User closes the browser",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "Login.user_on_login_page()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "shivammrastogi05",
-      "offset": 17
-    }
-  ],
-  "location": "Login.user_enters_username(String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Login.user_hits_Next_button()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "rakshik$$",
-      "offset": 13
-    }
-  ],
-  "location": "Login.user_enters_password(String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Login.user_selects_Next_button()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Login.user_navigates_inbox()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Login.user_closes_browser()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.uri("2_Compose.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/Shivamm/eclipse-workspace/Cucumber/src/test/java/Features/2_Compose.feature");
 formatter.feature({
   "line": 1,
   "name": "Compose mail",
@@ -306,31 +16,129 @@ formatter.scenario({
 });
 formatter.step({
   "line": 4,
-  "name": "User is logged in",
+  "name": "User is on the login page",
   "keyword": "Given "
 });
 formatter.step({
   "line": 5,
+  "name": "User enters username",
+  "rows": [
+    {
+      "cells": [
+        "shivammrastogi"
+      ],
+      "line": 6
+    }
+  ],
+  "keyword": "When "
+});
+formatter.step({
+  "line": 8,
+  "name": "User clicks on Next button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 9,
+  "name": "User enters the password",
+  "rows": [
+    {
+      "cells": [
+        "rakshik$"
+      ],
+      "line": 10
+    }
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 12,
+  "name": "User hits Next button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 13,
+  "name": "User gets navigated to Inbox",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 14,
   "name": "User clicks on the Compose button",
   "keyword": "When "
 });
 formatter.step({
-  "line": 6,
+  "line": 15,
   "name": "User enters the recipient",
+  "rows": [
+    {
+      "cells": [
+        "shivammrastogi@gmail.com"
+      ],
+      "line": 16
+    }
+  ],
   "keyword": "Then "
 });
 formatter.step({
-  "line": 7,
+  "line": 18,
   "name": "User enters the subject",
+  "rows": [
+    {
+      "cells": [
+        "Subject"
+      ],
+      "line": 19
+    }
+  ],
   "keyword": "Then "
 });
 formatter.step({
-  "line": 8,
+  "line": 21,
   "name": "User enters the mail body",
+  "rows": [
+    {
+      "cells": [
+        "Test email"
+      ],
+      "line": 22
+    }
+  ],
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Compose.user_has_logged_in()"
+  "location": "Login.user_on_login_page()"
+});
+formatter.result({
+  "duration": 21689666100,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Compose.user_inserts_username(DataTable)"
+});
+formatter.result({
+  "duration": 9339400,
+  "error_message": "java.lang.NullPointerException\r\n\tat StepDefinitions.Compose.user_inserts_username(Compose.java:21)\r\n\tat ✽.When User enters username(C:/Users/Shivamm/eclipse-workspace/Cucumber/src/test/java/Features/2_Compose.feature:5)\r\n",
+  "status": "failed"
+});
+formatter.match({
+  "location": "Login.user_hits_Next_button()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Compose.user_inserts_password(DataTable)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Login.user_selects_Next_button()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Login.user_navigates_inbox()"
 });
 formatter.result({
   "status": "skipped"
@@ -342,19 +150,19 @@ formatter.result({
   "status": "skipped"
 });
 formatter.match({
-  "location": "Compose.user_enters_recipient()"
+  "location": "Compose.user_enters_recipient(DataTable)"
 });
 formatter.result({
   "status": "skipped"
 });
 formatter.match({
-  "location": "Compose.user_enters_subject()"
+  "location": "Compose.user_enters_subject(DataTable)"
 });
 formatter.result({
   "status": "skipped"
 });
 formatter.match({
-  "location": "Compose.user_enters_message()"
+  "location": "Compose.user_enters_message(DataTable)"
 });
 formatter.result({
   "status": "skipped"

@@ -15,9 +15,6 @@ import cucumber.api.java.en.When;
 public class Login {
 
     WebDriver driver;
-	public static void init() {
-
-	}
 
 	@Given("^User is on the login page$")
 	public void user_on_login_page() {
@@ -45,7 +42,7 @@ public class Login {
 
 	@And("^User hits Next button$")
 	public void user_selects_Next_button() {
-		driver.findElement(By.xpath("//span[contains(text(), 'Next')]")).click();
+		driver.findElement(By.xpath("(//span[@class='CwaK9'])[1]")).click();
 	}
 
 	@Then("^User gets navigated to Inbox$")

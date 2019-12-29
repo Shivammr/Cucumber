@@ -1,37 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="0">
-    <testcase classname="Gmail Login" name="Log in to Gmail" time="0">
-        <system-out>
-            <![CDATA[Given User is on the login page.............................................skipped
-When User enters the "shivammrastogi".......................................skipped
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="21.699005">
+    <testcase classname="Compose mail" name="Compose a new email" time="21.699005">
+        <failure message="java.lang.NullPointerException&#13;&#10;&#9;at StepDefinitions.Compose.user_inserts_username(Compose.java:21)&#13;&#10;&#9;at ✽.When User enters username(C:/Users/Shivamm/eclipse-workspace/Cucumber/src/test/java/Features/2_Compose.feature:5)&#13;&#10;">
+            <![CDATA[Given User is on the login page.............................................passed
+When User enters username...................................................failed
 And User clicks on Next button..............................................skipped
-And User enters "rakshik$"..................................................skipped
+And User enters the password................................................skipped
 And User hits Next button...................................................skipped
 Then User gets navigated to Inbox...........................................skipped
-And User closes the browser.................................................skipped
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="Gmail Login" name="Log in to Gmail 2" time="0">
-        <system-out>
-            <![CDATA[Given User is on the login page.............................................skipped
-When User enters the "shivammrastogi05".....................................skipped
-And User clicks on Next button..............................................skipped
-And User enters "rakshik$$".................................................skipped
-And User hits Next button...................................................skipped
-Then User gets navigated to Inbox...........................................skipped
-And User closes the browser.................................................skipped
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="Compose mail" name="Compose a new email" time="0">
-        <system-out>
-            <![CDATA[Given User is logged in.....................................................skipped
 When User clicks on the Compose button......................................skipped
 Then User enters the recipient..............................................skipped
 Then User enters the subject................................................skipped
 Then User enters the mail body..............................................skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at StepDefinitions.Compose.user_inserts_username(Compose.java:21)
+	at ✽.When User enters username(C:/Users/Shivamm/eclipse-workspace/Cucumber/src/test/java/Features/2_Compose.feature:5)
 ]]>
-        </system-out>
+        </failure>
     </testcase>
 </testsuite>
